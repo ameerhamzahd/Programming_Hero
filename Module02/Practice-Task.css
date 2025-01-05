@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    font-style: italic;
+    margin: 25px;
+    font-size: 30px;
+}
+
+#favourite-place-details {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.favourite-place-title h2 {
+    font-size: 30px;
+    margin: 25px 0px;
+}
+
+.favourite-place-title p {
+    font-size: 20px;
+    margin: 0px 0px 25px;
+    text-align: justify;
+}
+
+strong {
+    font-style: italic;
+    color: #333;
+}
+
+.favourite-place-lists {
+    padding: 0px 0px;
+    text-align: justify;
+}
+
+.favourite-place-lists ul {
+    padding: 0px 25px;
+    margin: 0px 0px 25px;
+}
+
+.favourite-place-lists ul li {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+}
+
+.favourite-place-lists ul p {
+    font-size: 18px;
+    margin: 0px 0px 10px;
+}
+
+.favourite-place-exiting-fact {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#profile-card {
+    margin: 50px;
+    display: flex;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-details {
+    text-align: justify;
+    width: 50%;
+}
+
+.profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-image img{
+    width: 50%;
+    border-radius: 50%;
+    border: 10px outset #333;
+    display: block;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.profile-details h2 {
+    font-size: 50px;
+}
+
+.profile-details p {
+    font-size: 25px;
+}
+
+.see-more {
+    font-size: 20px;
+    background-color:darkgray;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-more:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: aliceblue;
+    transition: 0.5s ease;
+}
+
+.see-more svg {
+    width: 20px;
+}
