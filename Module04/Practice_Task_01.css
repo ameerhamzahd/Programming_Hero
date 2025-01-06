@@ -1,0 +1,36 @@
+.search-panel button:hover {
+    cursor: pointer;
+}
+
+.feedback-form {
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.feedback-form button {
+    margin: 10px 0px;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+.feedback-form button:hover {
+    transition: 0.5s ease;
+    background-color: #333;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#bottom {
+    margin: 50px 0px;
+    border: 2px solid #333;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}

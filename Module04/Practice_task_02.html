@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 04(ii)</title>
+
+    <link rel="stylesheet" href="Practice_Task_02.css">
+</head>
+<body>
+    <section id="feedback-form">
+        <div class="feedback-form">
+            <h1>Feedback Form</h1>
+            <P>Rating Table:</P>
+
+            <table>
+                <thead>
+                    <tr><td>No.</td> <td>Category</td> <td>Rating</td></tr>
+                </thead>
+
+                <tbody>
+                    <tr><td>1. </td><td>Excellent</td><td>*****</td></tr>
+                    <tr><td>2. </td><td>Good</td><td>****</td></tr>
+                    <tr><td>3. </td><td>Satisfactory</td><td>***</td></tr>
+                    <tr><td>4. </td><td>Bad</td><td>**</td></tr>
+                    <tr><td>5. </td><td>Worst</td><td>*</td></tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <form>
+                <label for="story">Share your story:</label><br>
+                <textarea id="story" name="story" rows="5" cols="40"></textarea><br><br>
+              
+                <label for="rating">Rate the story:</label><br>
+                <select class="rating" name="rating">
+                    <option value="">Choose a rating</option>   
+                  <option value="excellent">Excellent</option>
+                  <option value="good">Good</option>
+                  <option value="satisfactory">Satisfactory</option>
+                  <option value="bad">Bad</option>
+                  <option value="worst">Worst</option>
+                </select><br><br>
+              
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </section>
+</body>
+</html>
