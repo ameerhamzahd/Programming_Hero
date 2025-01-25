@@ -1,9 +1,9 @@
 @media screen and (max-width: 576px) {
-    nav, .nav-links, .banner, .banner-details, .featured {
+    nav, .nav-links, .banner, .banner-details {
         flex-direction: column;
     }
 
-    .banner, #featured {
+    .banner {
         padding: 25px 25px 50px;
         gap: 50px;
         align-items: center;
