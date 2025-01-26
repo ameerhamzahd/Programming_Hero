@@ -36,14 +36,15 @@
     <!-- header -->
     <header class="max-w-screen-xl px-5 mx-auto">
         <!-- Banner -->
-        <div class="flex flex-col gap-5 py-[1.5rem] md:flex-row md:py-[3rem]">
-            <div class="flex flex-col max-w-2xl gap-5 text-center md:text-left">
+        <div class="flex flex-col gap-5 py-[1.5rem] lg:flex-row md:py-[3rem]">
+            <div class="flex flex-col max-w-2xl gap-5 text-center lg:text-left">
                 <h1 class="text-[#1C1C1C] font-bold text-[5rem]">It's good <br>
                     tea time at The Tea House</h1>
-                <p class="text-[#777777] text-[1.125rem]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                <p class="text-[#777777] text-[1.125rem] font-medium">Tea and Botanical Solutions Supplier Give Optimum
+                    Satisfaction
                     To Your Taste Buds.</p>
 
-                <div class="flex justify-center md:justify-start">
+                <div class="flex justify-center lg:justify-start">
                     <button
                         class="flex items-center justify-center gap-3 bg-gradient-to-r from-[#FF0000] to-[#FF8938] w-[12.5rem] h-[4rem] rounded-2xl text-[#FFFFFF] font-bold">
                         Explore More <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -59,7 +60,8 @@
                 <img class="w-full md:max-w-[54rem]" src="./resources/images/banner.png" alt="banner">
 
                 <div class="flex justify-center drop-shadow-xl md:justify-start md:mt-[-6.25rem] md:ml-[4.5rem]">
-                    <button class="flex items-center justify-center gap-3 rounded-2xl bg-[#FFFFFF] w-[15rem] h-[6.25rem]">
+                    <button
+                        class="flex items-center justify-center gap-3 rounded-2xl bg-[#FFFFFF] w-[15rem] h-[6.25rem]">
                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.4416 13.778L29.9033 12.6152L24.9228 1.04987C24.574 0.240051 23.4259 0.240051 23.0772 1.04987L18.0966 12.6151L5.5584 13.778C4.68043 13.8594 4.32568 14.9514 4.98802 15.5333L14.4482 23.8439L11.6796 36.1279C11.4858 36.988 12.4147 37.6629 13.1728 37.2128L24 30.7838L34.8272 37.2128C35.5854 37.663 36.5141 36.988 36.3204 36.1279L33.5517 23.8439L43.012 15.5333C43.6743 14.9514 43.3195 13.8594 42.4416 13.778Z"
@@ -86,7 +88,7 @@
 
                         <div class="text-left">
                             <h2 class="font-bold text-[1.875rem]">5.00</h2>
-                            <p class="font-normal text-[1rem] text-[#777777]">Trust Pilot Ratings</p>
+                            <p class="font-semibold text-[1rem] text-[#777777]">Trust Pilot Ratings</p>
                         </div>
                     </button>
                 </div>
@@ -96,7 +98,74 @@
 
     <!-- Main -->
     <main class="max-w-screen-xl mx-auto">
+        <!-- Featured Products -->
+        <section>
+            <div class="py-[1.5rem] md:py-[3rem]">
+                <div class="flex flex-col gap-5 text-center px-5 lg:px-[6.25rem]">
+                    <h3 class="text-[#1C1C1C] text-[2.75rem] font-bold">Our Featured Products</h3>
+                    <p class="text-[#777777] text-[1rem] font-medium">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable. </p>
+                </div>
 
+                <div class="py-[1.5rem] md:py-[3rem]">
+                    <div
+                        class="grid grid-cols-1 gap-5 drop-shadow-lg justify-items-center lg:grid-cols-4 md:grid-cols-2">
+                        <div
+                            class="flex gap-[1.5rem] flex-col bg-gradient-to-b from-gray-100 to-white rounded-xl max-w-[16.5rem] h-[24.5rem] p-5 md:gap-[3rem]">
+                            <div class="flex justify-center">
+                                <img class="w-[8.5rem] h-[13.25rem]" src="./resources/images/tea-1.png" alt="tea-1">
+                            </div>
+
+                            <div class="flex flex-col gap-2 text-center">
+                                <h4 class="font-bold text-[1.5rem] text-[#1C1C1C]">Milk Tea</h4>
+                                <p class="text-[#777777] text-[1rem] font-semibold">Creamer could be replaced by fresh
+                                    milk</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-[3rem] bg-gradient-to-b from-gray-100 to-white rounded-xl max-w-[16.5rem] h-[24.5rem] p-5">
+                            <div class="flex justify-center">
+                                <img class="w-[8.5rem] h-[13.25rem]" src="./resources/images/tea-2.png" alt="tea-2">
+                            </div>
+
+                            <div class="flex flex-col gap-2 text-center">
+                                <h4 class="font-bold text-[1.5rem] text-[#1C1C1C]">Black Tea</h4>
+                                <p class="text-[#777777] text-[1rem] font-semibold">Creamer could be replaced by fresh
+                                    milk</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-[3rem] bg-gradient-to-b from-gray-100 to-white rounded-xl max-w-[16.5rem] h-[24.5rem] p-5">
+                            <div class="flex justify-center">
+                                <img class="w-[8.5rem] h-[13.25rem]" src="./resources/images/tea-3.png" alt="tea-3">
+                            </div>
+
+                            <div class="flex flex-col gap-2 text-center">
+                                <h4 class="font-bold text-[1.5rem] text-[#1C1C1C]">Lemon Tea</h4>
+                                <p class="text-[#777777] text-[1rem] font-semibold">Creamer could be replaced by fresh
+                                    milk</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-[3rem] bg-gradient-to-b from-gray-100 to-white rounded-xl max-w-[16.5rem] h-[24.5rem] p-5">
+                            <div class="flex justify-center">
+                                <img class="w-[8.5rem] h-[13.25rem]" src="./resources/images/tea-4.png" alt="tea-4">
+                            </div>
+
+                            <div class="flex flex-col gap-2 text-center">
+                                <h4 class="font-bold text-[1.5rem] text-[#1C1C1C]">Lemon Tea</h4>
+                                <p class="text-[#777777] text-[1rem] font-semibold">Creamer could be replaced by fresh
+                                    milk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
