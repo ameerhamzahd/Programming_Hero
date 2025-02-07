@@ -1,5 +1,5 @@
 // (i)
-const destination = ['Bandarban', 'Saint Martin', 'Circuit House']
+const destination = ['Bandarban', 'Saint Martin', 'Circuit House'];
 console.log(destination);
 
 // (ii)
