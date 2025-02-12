@@ -1,4 +1,4 @@
-let sentence1 = "If a given string has either x, replace x by y. if the given string has X, replace it by Y."
+let sentence1 = "If a given string has either x, replace x by y. if the given string has X, replace it by Y.";
 let sentence2 = "";
 
 for (let letter = 0; letter < sentence1.length; letter++) {
