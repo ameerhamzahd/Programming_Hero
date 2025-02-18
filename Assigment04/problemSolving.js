@@ -59,34 +59,61 @@
 // }
 
 
-function electionResult() {
-    let candidate1 = 0, candidate2 = 0;
-    let parties = ["mango", "BananA", "na vote", "na vote"]
+// function electionResult() {
+//     let candidate1 = 0, candidate2 = 0;
+//     let parties = ["mango", "BananA", "na vote", "na vote"];
 
-    if (!Array.isArray(parties)) {
-        return "Invalid";
+//     if (!Array.isArray(parties)) {
+//         return "Invalid";
+//     }
+
+//     for (let party of parties) {
+//         if (typeof party !== "string") {
+//             return "Invalid.";
+//         }
+
+//         if (party === "mango") {
+//             candidate1++;
+//         }
+//         else if (party === "banana") {
+//             candidate2++;
+//         }
+//     }
+
+//     if (candidate1 > candidate2) {
+//         return "Mango.";
+//     }
+//     else if (candidate1 < candidate2) {
+//         return "Banana.";
+//     }
+//     else {
+//         return "Draw.";
+//     }
+// }
+
+
+function isBestFriend() {
+    const friend1 = {
+        name: 'Tajbedur Rahman',
+        roll: 23,
+        bestFriend: 2
+    };
+
+    const friend2 = {
+        name: 'Kausarul Alam Navin',
+        roll: 2,
+        bestFriend: 23
+    };
+
+    if(typeof friend1 !== 'object' || typeof friend2 !== 'object') {
+        return 'Invalid.';
     }
 
-    for (let party of parties) {
-        if (typeof party !== "string") {
-            return "Invalid.";
-        }
-
-        if (party === "mango") {
-            candidate1++;
-        }
-        else if (party === "banana") {
-            candidate2++;
-        }
-    }
-
-    if (candidate1 > candidate2) {
-        return "Mango.";
-    }
-    else if (candidate1 < candidate2) {
-        return "Banana.";
+    if(friend1.bestFriend === friend2.roll && friend2.bestFriend === friend1.roll) {
+        return true;
     }
     else {
-        return "Draw.";
+        return false;
     }
 }
+
