@@ -16,7 +16,6 @@
 
 // function validEmail() {
 //     let email = "ameerhamzah.daiyan@gmail.com";
-//     let flag = 0;
 
 //     if (typeof email !== 'string') {
 //         return 'Invalid.';
@@ -35,10 +34,8 @@
 //     }
 
 //     if (typeof email === 'string') {
-//         for (let i = 0; i < email.length; i++) {
-//             if (email[i] === ' ') {
-//                 return false;
-//             }
+//         if (email.includes(" ")) {
+//             return false;
 //         }
 
 //         for (let i = 0; i < email.length; i++) {
@@ -92,28 +89,56 @@
 // }
 
 
-function isBestFriend() {
-    const friend1 = {
-        name: 'Tajbedur Rahman',
-        roll: 23,
-        bestFriend: 2
-    };
+// function isBestFriend() {
+//     const friend1 = {
+//         name: 'Tajbedur Rahman',
+//         roll: 23,
+//         bestFriend: 2
+//     };
 
-    const friend2 = {
-        name: 'Kausarul Alam Navin',
-        roll: 2,
-        bestFriend: 23
-    };
+//     const friend2 = {
+//         name: 'Kausarul Alam Navin',
+//         roll: 2,
+//         bestFriend: 23
+//     };
 
-    if(typeof friend1 !== 'object' || typeof friend2 !== 'object') {
-        return 'Invalid.';
-    }
+//     if(typeof friend1 !== 'object' || typeof friend2 !== 'object') {
+//         return 'Invalid.';
+//     }
 
-    if(friend1.bestFriend === friend2.roll && friend2.bestFriend === friend1.roll) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
+//     if(friend1.bestFriend === friend2.roll && friend2.bestFriend === friend1.roll) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
 
+
+// function calculateWatchTime() {
+//     let watchTime = [100, 3800, "90" ];
+//     let totalWatchTime = 0;
+//     let objectWatchTime = {
+//         hour: 0,
+//         minute: 0,
+//         second: 0
+//     }
+
+//     if (!Array.isArray(watchTime)) {
+//         return "Invalid.";
+//     }
+
+//     for (let time of watchTime) {
+//         if (typeof time !== "number") {
+//             return "Invalid.";
+//         }
+
+//         totalWatchTime += time;
+//     }
+
+//     objectWatchTime.hour = Math.floor(totalWatchTime / 3600);
+//     objectWatchTime.minute = Math.floor((totalWatchTime % 3600) / 60);
+//     objectWatchTime.second = totalWatchTime % 60;
+
+//     return objectWatchTime;
+// }
