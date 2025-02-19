@@ -1,22 +1,19 @@
-function cashOut() {
-    let cashoutAmount = 2000;
+function cashOut(money) {
     let cashoutCharge = 1.75;
-    let cashoutOutput = 'Invalid.';
+    let cashoutOutput = 0;
 
-    if (cashoutAmount < 0 || typeof cashoutAmount !== 'number') {
-        return cashoutOutput;
+    if (money < 0 || typeof money !== 'number') {
+        return 'Invalid.';
     }
     else {
-        cashoutOutput = (cashoutAmount * (cashoutCharge / 100)).toFixed(2);
+        cashoutOutput = (money * (cashoutCharge / 100)).toFixed(2);
 
         return cashoutOutput;
     }
 }
 
 
-function validEmail() {
-    let email = "ameerhamzah.daiyan@gmail.com";
-
+function validEmail(email) {
     if (typeof email !== 'string') {
         return 'Invalid.';
     }
@@ -40,23 +37,22 @@ function validEmail() {
 }
 
 
-function electionResult() {
+function electionResult(votes) {
     let candidate1 = 0, candidate2 = 0;
-    let parties = ["mango", "BananA", "na vote", "na vote"];
 
-    if (!Array.isArray(parties)) {
+    if (!Array.isArray(votes)) {
         return "Invalid";
     }
 
-    for (let party of parties) {
-        if (typeof party !== "string") {
+    for (let vote of votes) {
+        if (typeof vote !== "string") {
             return "Invalid.";
         }
 
-        if (party === "mango") {
+        if (vote === "mango") {
             candidate1++;
         }
-        else if (party === "banana") {
+        else if (vote === "banana") {
             candidate2++;
         }
     }
@@ -73,24 +69,12 @@ function electionResult() {
 }
 
 
-function isBestFriend() {
-    const friend1 = {
-        name: 'Tajbedur Rahman',
-        roll: 23,
-        bestFriend: 2
-    };
-
-    const friend2 = {
-        name: 'Kausarul Alam Navin',
-        roll: 2,
-        bestFriend: 23
-    };
-
-    if(typeof friend1 !== 'object' || typeof friend2 !== 'object') {
+function isBestFriend(f1, f2) {
+    if (typeof f1 !== 'object' || typeof f2 !== 'object') {
         return 'Invalid.';
     }
 
-    if(friend1.bestFriend === friend2.roll && friend2.bestFriend === friend1.roll) {
+    if (f1.bestFriend === f2.roll && f2.bestFriend === f1.roll) {
         return true;
     }
     else {
@@ -99,8 +83,7 @@ function isBestFriend() {
 }
 
 
-function calculateWatchTime() {
-    let watchTime = [100, 3800, "90" ];
+function calculateWatchTime(times) {
     let totalWatchTime = 0;
     let objectWatchTime = {
         hour: 0,
@@ -108,11 +91,11 @@ function calculateWatchTime() {
         second: 0
     }
 
-    if (!Array.isArray(watchTime)) {
+    if (!Array.isArray(times)) {
         return "Invalid.";
     }
 
-    for (let time of watchTime) {
+    for (let time of times) {
         if (typeof time !== "number") {
             return "Invalid.";
         }
