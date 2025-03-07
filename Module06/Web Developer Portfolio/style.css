@@ -9,7 +9,7 @@
 /* Header */
 
 header {
-    background-image: url(./images/developer.png), url(./images/header_bg.png);
+    background-image: url(./images/ameerhamzahd.jpg), url(./images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
@@ -119,6 +119,10 @@ nav>ul>li>a {
 
 .banner-details h3 {
     font-size: 45px;
+}
+
+.banner-details p {
+    width: 75%;
 }
 
 /* Main */
