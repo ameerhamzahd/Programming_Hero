@@ -24,7 +24,7 @@ const sum = (num1, num2) => {
 
 // Use Spread Operator before an array for getting the values of that array
 const numbers = [1, 2, 3, 4, 5];
-console.log(...numbers);
+console.log(...numbers);  
 
 // Object Destructuring
 const person = {
@@ -37,23 +37,23 @@ const { name, age } = person;
 console.log(name, age)
 
 // Array Destructuing
-const numbers = [1, 2, 3, 4, 5];
-const [num1, num2, num3, num4, num5] = numbers;
+const numbers2 = [1, 2, 3, 4, 5];
+const [num1, num2, num3, num4, num5] = numbers2;
 
 
-const person = {
+const person2 = {
     name: 'Ameer Hamzah Daiyan',
     age: 20,
 };
 
 // Show object keys
-console.log(Object.keys(person));
+console.log(Object.keys(person2));
 // Show object values
-console.log(Object.values(person));
+console.log(Object.values(person2));
 // Show object entries
-console.log(Object.entries(person));
+console.log(Object.entries(person2));
 
 // We cannot push any items in the specific object because of using the property
-Object.seal(person);
+Object.seal(person2);
 // We cannot change the values and push any items in the specific object  because of using the property
-Object.freeze(person); 
+Object.freeze(person2); 
