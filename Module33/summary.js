@@ -110,7 +110,7 @@ handleUser();
 // => No, GET is used to retrieve data, while PUT is for updating or creating resources.
 
 // 4) What is the difference between PUT and POST? 
-// => PUT updates/replaces a resource, while POST creates a new resource.
+// => PUT updates/replaces/creates a resource, while POST creates a new resource.
 
 // 5) What is JSON? 
 // => JSON (JavaScript Object Notation) is a lightweight data format for data exchange.
