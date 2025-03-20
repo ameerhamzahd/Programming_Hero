@@ -1,21 +1,21 @@
 // Storing Data in Local Storage
-// const age = 23;
-// localStorage.setItem('age', age);
+const age = 23;
+localStorage.setItem('age', age);
 
-// console.log(localStorage.getItem('age'));
+console.log(localStorage.getItem('age'));
 
 // By Function ()
-// const handleData = () => {
-//     const person = {
-//         name: 'Ameer Hamzah Daiyan',
-//         age: 23
-//     };
+const handleData = () => {
+    const person = {
+        name: 'Ameer Hamzah Daiyan',
+        age: 23
+    };
 
-//     localStorage.setItem('person', JSON.stringify(person));
-// }
+    localStorage.setItem('person', JSON.stringify(person));
+}
 
-// const getData = localStorage.getItem('person');
-// console.log(JSON.parse(getData));
+const getData = localStorage.getItem('person');
+console.log(JSON.parse(getData));
 
 // Product Details
 const handleData = () => {
