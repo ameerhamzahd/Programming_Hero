@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.student, .prophets {
+  padding: 20px;
+  border: 2px solid salmon;
+  border-radius: 10px;
+}
